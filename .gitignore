@@ -1,58 +1,7 @@
-# Prerequisites
-*.d
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-*.suo
-*.db
-*.ipch
-*.pdb
-*.bin
-*.response
-*.exp
-.gitattributes
-*.db-shm
-*.db-wal
-*.opendb
-*.target
-*.modules
-*.ini
-*.sln
-*.json
-*.log
-*.txt
-*.deps
-*.png
-*.runtime-xml
-*.dmp
-*.dat
-*.state
-*.dat
-*.state
+#Ignore folers
+.vs
+Binaries
+DerivedDataCache
+Intermediate
+Saved
