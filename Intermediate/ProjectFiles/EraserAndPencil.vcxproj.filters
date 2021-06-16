@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\EraserAndPencil.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{24878ECF-45AC-48B0-826F-479141DB2813}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\EraserAndPencil.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\EraserAndPencilEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{524B12CD-CC2D-465F-8AFE-3596D91D3E33}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\EraserAndPencil">
+      <UniqueIdentifier>{B7D02AAD-C0A7-4F5E-90B0-41BB4C6B22A4}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\EraserAndPencil\DepreojectableCapComp2D.cpp">
+      <Filter>Source\EraserAndPencil</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\EraserAndPencil\DepreojectableCapComp2D.h">
+      <Filter>Source\EraserAndPencil</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\EraserAndPencil\EraserAndPencil.Build.cs">
+      <Filter>Source\EraserAndPencil</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\EraserAndPencil\EraserAndPencil.cpp">
+      <Filter>Source\EraserAndPencil</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\EraserAndPencil\EraserAndPencil.h">
+      <Filter>Source\EraserAndPencil</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\EraserAndPencil\EraserAndPencilCharacter.cpp">
+      <Filter>Source\EraserAndPencil</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\EraserAndPencil\EraserAndPencilCharacter.h">
+      <Filter>Source\EraserAndPencil</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\EraserAndPencil\EraserAndPencilGameMode.cpp">
+      <Filter>Source\EraserAndPencil</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\EraserAndPencil\EraserAndPencilGameMode.h">
+      <Filter>Source\EraserAndPencil</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\EraserAndPencil\EraserAndPencilHUD.cpp">
+      <Filter>Source\EraserAndPencil</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\EraserAndPencil\EraserAndPencilHUD.h">
+      <Filter>Source\EraserAndPencil</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\EraserAndPencil\EraserAndPencilProjectile.cpp">
+      <Filter>Source\EraserAndPencil</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\EraserAndPencil\EraserAndPencilProjectile.h">
+      <Filter>Source\EraserAndPencil</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\EraserAndPencil\TraceableCaptureComp2D.cpp">
+      <Filter>Source\EraserAndPencil</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\EraserAndPencil\TraceableCaptureComp2D.h">
+      <Filter>Source\EraserAndPencil</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
