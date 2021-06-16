@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeEraserAndPencil_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xAEE67E4D,
+				0x4405973D,
 				0xD430C7C2,
 				METADATA_PARAMS(nullptr, 0)
 			};

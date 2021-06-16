@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeEraserAndPencilCharacter() {}
 	UPackage* Z_Construct_UPackage__Script_EraserAndPencil();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	HEADMOUNTEDDISPLAY_API UClass* Z_Construct_UClass_UMotionControllerComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ERASERANDPENCIL_API UClass* Z_Construct_UClass_AEraserAndPencilProjectile_NoRegister();
@@ -61,10 +61,6 @@ void EmptyLinkFunctionForGeneratedCodeEraserAndPencilCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_VR_MuzzleLocation;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FirstPersonCameraComponent_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FirstPersonCameraComponent;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_R_MotionController_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_R_MotionController;
@@ -72,6 +68,10 @@ void EmptyLinkFunctionForGeneratedCodeEraserAndPencilCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_L_MotionController_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_L_MotionController;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FirstPersonCameraComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FirstPersonCameraComponent;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BaseTurnRate_MetaData[];
 #endif
@@ -167,17 +167,6 @@ void EmptyLinkFunctionForGeneratedCodeEraserAndPencilCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_VR_MuzzleLocation = { "VR_MuzzleLocation", nullptr, (EPropertyFlags)0x00400000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEraserAndPencilCharacter, VR_MuzzleLocation), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_VR_MuzzleLocation_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_VR_MuzzleLocation_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_FirstPersonCameraComponent_MetaData[] = {
-		{ "AllowPrivateAccess", "true" },
-		{ "Category", "Camera" },
-		{ "Comment", "/** First person camera */" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "EraserAndPencilCharacter.h" },
-		{ "ToolTip", "First person camera" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_FirstPersonCameraComponent = { "FirstPersonCameraComponent", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEraserAndPencilCharacter, FirstPersonCameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_FirstPersonCameraComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_FirstPersonCameraComponent_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_R_MotionController_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "EraserAndPencilCharacter" },
@@ -199,6 +188,16 @@ void EmptyLinkFunctionForGeneratedCodeEraserAndPencilCharacter() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_L_MotionController = { "L_MotionController", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEraserAndPencilCharacter, L_MotionController), Z_Construct_UClass_UMotionControllerComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_L_MotionController_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_L_MotionController_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_FirstPersonCameraComponent_MetaData[] = {
+		{ "Category", "EraserAndPencilCharacter" },
+		{ "Comment", "/** First person camera */" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "EraserAndPencilCharacter.h" },
+		{ "ToolTip", "First person camera" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_FirstPersonCameraComponent = { "FirstPersonCameraComponent", nullptr, (EPropertyFlags)0x001000000008000c, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEraserAndPencilCharacter, FirstPersonCameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_FirstPersonCameraComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_FirstPersonCameraComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_BaseTurnRate_MetaData[] = {
 		{ "Category", "Camera" },
@@ -272,9 +271,9 @@ void EmptyLinkFunctionForGeneratedCodeEraserAndPencilCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_FP_MuzzleLocation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_VR_Gun,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_VR_MuzzleLocation,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_FirstPersonCameraComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_R_MotionController,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_L_MotionController,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_FirstPersonCameraComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_BaseTurnRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_BaseLookUpRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEraserAndPencilCharacter_Statics::NewProp_GunOffset,
@@ -310,7 +309,7 @@ void EmptyLinkFunctionForGeneratedCodeEraserAndPencilCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEraserAndPencilCharacter, 2636316772);
+	IMPLEMENT_CLASS(AEraserAndPencilCharacter, 2862268051);
 	template<> ERASERANDPENCIL_API UClass* StaticClass<AEraserAndPencilCharacter>()
 	{
 		return AEraserAndPencilCharacter::StaticClass();

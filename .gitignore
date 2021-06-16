@@ -33,9 +33,7 @@
 *.suo
 *.db
 *.ipch
-*.uasset
 *.pdb
-*.umap
 *.bin
 *.response
 *.exp
@@ -47,7 +45,6 @@
 *.modules
 *.ini
 *.sln
-*.uproject
 *.json
 *.log
 *.txt
@@ -55,3 +52,7 @@
 *.png
 *.runtime-xml
 *.dmp
+*.dat
+*.state
+*.dat
+*.state

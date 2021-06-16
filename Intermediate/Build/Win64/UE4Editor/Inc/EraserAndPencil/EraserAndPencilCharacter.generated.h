@@ -64,7 +64,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AEraserAndPencilCharacter); \
 	FORCEINLINE static uint32 __PPO__FP_MuzzleLocation() { return STRUCT_OFFSET(AEraserAndPencilCharacter, FP_MuzzleLocation); } \
 	FORCEINLINE static uint32 __PPO__VR_Gun() { return STRUCT_OFFSET(AEraserAndPencilCharacter, VR_Gun); } \
 	FORCEINLINE static uint32 __PPO__VR_MuzzleLocation() { return STRUCT_OFFSET(AEraserAndPencilCharacter, VR_MuzzleLocation); } \
-	FORCEINLINE static uint32 __PPO__FirstPersonCameraComponent() { return STRUCT_OFFSET(AEraserAndPencilCharacter, FirstPersonCameraComponent); } \
 	FORCEINLINE static uint32 __PPO__R_MotionController() { return STRUCT_OFFSET(AEraserAndPencilCharacter, R_MotionController); } \
 	FORCEINLINE static uint32 __PPO__L_MotionController() { return STRUCT_OFFSET(AEraserAndPencilCharacter, L_MotionController); }
 

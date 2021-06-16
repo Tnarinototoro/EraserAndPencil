@@ -39,9 +39,7 @@ class AEraserAndPencilCharacter : public ACharacter
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
 	USceneComponent* VR_MuzzleLocation;
 
-	/** First person camera */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-	UCameraComponent* FirstPersonCameraComponent;
+	
 
 	/** Motion controller (right hand) */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
@@ -58,6 +56,9 @@ protected:
 	virtual void BeginPlay();
 
 public:
+	/** First person camera */
+	UPROPERTY(BlueprintReadWrite)
+	UCameraComponent* FirstPersonCameraComponent;
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseTurnRate;
