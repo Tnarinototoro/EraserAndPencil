@@ -1,8 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-
-#include "Engine/TextureRenderTarget2D.h"
-#include "Math/IntRect.h"
 #include "DepreojectableCapComp2D.h"
+#include "Engine/TextureRenderTarget2D.h"
+
 
 void UDepreojectableCapComp2D::CaptureComponent2D_DeProject(
 	const FVector2D& ScreenPos,
