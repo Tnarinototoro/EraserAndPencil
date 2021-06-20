@@ -34,4 +34,10 @@ public :
 	{
 		return this->FOVAngle;
 	}
+
+	UFUNCTION(BlueprintCallable)
+	void SetSceneCapturCompFOVangleinDegree(float Input)
+	{
+		this->FOVAngle = Input;
+	}
 };
