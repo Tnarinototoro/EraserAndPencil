@@ -15,16 +15,23 @@ class ERASERANDPENCIL_API UDepreojectableCapComp2D : public USceneCaptureCompone
 	GENERATED_BODY()
 public :
 	UFUNCTION(BlueprintCallable)
+		void GetTransform(FTransform& Transform);
+	UFUNCTION(BlueprintCallable)
+		float GetGplane()
+	{
+		return GNearClippingPlane;
+	}
+	UFUNCTION(BlueprintCallable)
 		void CaptureComponent2D_DeProject(
 			const FVector2D& ScreenPos,
 			FVector& OutWorldOrigin,
 			FVector& OutWorldDirection);
-
+	
 	UFUNCTION(BlueprintCallable)
 		void GetRenderPaperSize(float& RectX,float& RectY);
 	UFUNCTION(BlueprintCallable)
-	float GetSceneCapturCompFOVangle()
+	float GetSceneCapturCompFOVangleinDegree()
 	{
-		return this->FOVAngle * (float)PI / 180.0f;
+		return this->FOVAngle;
 	}
 };

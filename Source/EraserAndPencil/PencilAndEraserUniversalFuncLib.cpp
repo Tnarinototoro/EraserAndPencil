@@ -1,20 +1,16 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-#include "DepreojectableCapComp2D.h"
-#include "Engine/TextureRenderTarget2D.h"
 
 
-void UDepreojectableCapComp2D::CaptureComponent2D_DeProject(
-	const FVector2D& ScreenPos,
+#include "PencilAndEraserUniversalFuncLib.h"
+
+void UPencilAndEraserUniversalFuncLib::DeprojectFromTransformRecord(const FVector2D& ScreenPos,
+	const FTransform& Transform,
+	const float& FOVinDegree,
+	const float& surfaceWidth,
+	const float& surfaceHeight,
 	FVector& OutWorldOrigin,
 	FVector& OutWorldDirection)
 {
-    class USceneCaptureComponent2D* Target = this;
-    if ((Target == nullptr) || (Target->TextureTarget == nullptr))
-    {
-        return;
-    }
-
-    const FTransform& Transform = Target->GetComponentToWorld();
     FMatrix ViewMatrix = Transform.ToInverseMatrixWithScale();
     FVector ViewLocation = Transform.GetTranslation();
 
@@ -25,9 +21,9 @@ void UDepreojectableCapComp2D::CaptureComponent2D_DeProject(
         FPlane(0, 1, 0, 0),
         FPlane(0, 0, 0, 1));
 
-    const float FOV = Target->FOVAngle * (float)PI / 360.0f;
+    const float FOV = FOVinDegree * (float)PI / 360.0f;
 
-    FIntPoint CaptureSize(Target->TextureTarget->GetSurfaceWidth(), Target->TextureTarget->GetSurfaceHeight());
+    FIntPoint CaptureSize(surfaceWidth, surfaceHeight);
 
     float XAxisMultiplier;
     float YAxisMultiplier;
@@ -61,16 +57,4 @@ void UDepreojectableCapComp2D::CaptureComponent2D_DeProject(
 
     FSceneView::DeprojectScreenToWorld(ScreenPos, ViewRect, InverseViewMatrix, InvProjectionMatrix, OutWorldOrigin, OutWorldDirection);
 }
-void UDepreojectableCapComp2D::GetRenderPaperSize(float& RectX, float& RectY)
-{
-    if (this->TextureTarget)
-    {
-        RectX = this->TextureTarget->GetSurfaceWidth();
-        RectY = this->TextureTarget->GetSurfaceHeight();
-    }
-}
-void UDepreojectableCapComp2D::GetTransform(FTransform& Transform)
-{
-    class USceneCaptureComponent2D* Target = this;
-    Transform = Target->GetComponentToWorld();
-}
+
