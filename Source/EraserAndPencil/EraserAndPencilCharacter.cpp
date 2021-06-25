@@ -260,7 +260,6 @@ void AEraserAndPencilCharacter::MoveForward(float Value)
 	{
 		// add movement in that direction
 		AddMovementInput(GetActorForwardVector(), Value);
-		UE_LOG(LogTemp, Warning, TEXT("Moving forward"));
 	}
 }
 
