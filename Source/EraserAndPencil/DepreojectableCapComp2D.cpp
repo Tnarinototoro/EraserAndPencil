@@ -63,6 +63,14 @@ void UDepreojectableCapComp2D::CaptureComponent2D_DeProject(
 }
 void UDepreojectableCapComp2D::GetRenderPaperSize(float& RectX, float& RectY)
 {
-    RectX = this->TextureTarget->GetSurfaceWidth();
-    RectY = this->TextureTarget->GetSurfaceHeight();
+    if (this->TextureTarget)
+    {
+        RectX = this->TextureTarget->GetSurfaceWidth();
+        RectY = this->TextureTarget->GetSurfaceHeight();
+    }
+}
+void UDepreojectableCapComp2D::GetTransform(FTransform& Transform)
+{
+    class USceneCaptureComponent2D* Target = this;
+    Transform = Target->GetComponentToWorld();
 }
