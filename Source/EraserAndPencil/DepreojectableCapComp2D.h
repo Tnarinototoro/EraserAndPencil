@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "Components/SceneCaptureComponent2D.h"
 #include "DepreojectableCapComp2D.generated.h"
-struct FIntRect;
+
 /**
  * 
  */
